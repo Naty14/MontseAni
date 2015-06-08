@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones.js"type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<style>
+		#principal{
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			background-color:#09F;
+		}
+		#pantalla{
+			float:left;
+			width:100%;
+			height: 25%;
+			background:#0CF;
+			text-align:center;
+			font-size:4em;
+			font-weight:bold;
+			font-family:Verdana, Geneva, sans-serif;
+		}
+		#teclado{
+			float:left;
+			width:100%;
+			height:75%;
+		}
+		.nota{
+			position:relative;
+			float:left;
+			height:90%;
+			outline:#000 solid 1px;
+			background:#FF0;
+			width: 33.3333%;
+		}
+		.tocada{
+			color:#300;
+			background:#F00;
+			outline: solid 1px #FF0000;
+		}
+		</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page" style="background:#F99">
+	<div data-role="header" data-theme="b" align="center">
+		<h1>Animales Domesticos y Salvajes</h1>
+	</div>
+	<div data-role="content" data-theme="a" style="background-image:url(imagenes/animales.jpg)">	
+        <div align="center" data-role="controlgroup" data-type="vertical">
+        <div style="width:70%">
+        <h1>Animales</h1>
+        <a href="#page2" data-role="button" id="btn1">
+        Domesticos
+        </a>
+        <a href="#page3" data-role="button" id="btn2">
+        Salvajes
+        </a>    
+        </div>
+	</div>
+    </div>
+	<div data-role="footer" align="center">
+		<div class="pie">Animales Domesticos y Salvajes</div>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div id="principal">
+    	<div data-role="header" id="pantalla">
+		<h1>Domesticos</h1>
+		</div>
+	<div id="teclado">	
+    
+     <div id="canarios" class="nota">
+        	<img src="imagenes/Canarios.jpg" style="height:300px; width:100%;">
+        </div>
+       
+        
+		<div id="gato" class="nota">
+        	<img src="imagenes/gato.jpg" style="height:300px;width:100%;">
+        </div>
+        
+        <div id="conejo" class="nota">
+        	<img src="imagenes/conejo.jpg" style="height:300px;width:100%;">
+        </div>
+      
+        <div id="pato" class="nota">
+        	<img src="imagenes/pato.jpg" style=" height:300px;width:100%;">
+        </div>
+        
+        <div id="gallina" class="nota">
+        	<img src="imagenes/gallina.jpg" style=" height:300px;width:100%;">
+        </div>
+        
+         <div id="perro" class="nota">
+        	<img src="imagenes/perro.jpg" style=" height:300px;width:100%;">
+        </div>
+	</div>
+    <div data-role="footer" align="center" data-add-back-btn="true" data-back-btn-text="Atras">
+		<h1>Animales Domesticos y Salvajes</h1>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div id="principal">
+    	<div data-role="header" id="pantalla">
+		<h1>Salvajes</h1>
+		</div>
+	<div id="teclado">	
+    
+     <div id="caballo" class="nota">
+        	<img src="imagenes/caballo.jpg" style="height:300px; width:100%;">
+        </div>
+       
+        
+		<div id="cebra" class="nota">
+        	<img src="imagenes/cebra.jpg" style="height:300px;width:100%;">
+        </div>
+        
+        <div id="jirafa" class="nota">
+        	<img src="imagenes/jirafa.jpg" style="height:300px;width:100%;">
+        </div>
+      
+        <div id="lobo" class="nota">
+        	<img src="imagenes/lobo.jpg" style=" height:300px;width:100%;">
+        </div>
+        
+        <div id="leopardo" class="nota">
+        	<img src="imagenes/leopardo.jpg" style=" height:300px;width:100%;">
+        </div>
+        
+         <div id="leon" class="nota">
+        	<img src="imagenes/leon.jpg" style=" height:300px;width:100%;">
+        </div>
+	</div>
+    <div data-role="footer" align="center" data-add-back-btn="true" data-back-btn-text="Atras">
+		<h1>Animales Domesticos y Salvajes</h1>
+	</div>
+</div>
+</div>
+</body>
+</html>
